@@ -1,41 +1,27 @@
-let celcius = 10;
-let fahrenheit = celcius *1.8 +32;
-console.log(fahrenheit);
+// //First way of accessing an element 
 
-let subscribed = true;
-let loggedIn = true;
+// console.log(document.querySelector('#title'))
 
-if (subscribed === true) {
-    console.log('show the video')
+// //Second way of accessing an element
+
+// console.log(document.getElementById('title'))
+
+
+// // //Change HTML
+// document.querySelector('.title').innerHTML += 'Frontend Simplified'
+
+// // //Change CSS
+// // document.querySelector(".title").style.color = 'red'
+// document.querySelector(".title").style.fontSize = '28px'
+
+
+
+//On click change color of title
+function changeTitleToRed(){
+    document.querySelector(".title").style.color = 'red'
 }
 
-else if (loggedIn ===true){
-    console.log('tell the user to upgrade the subscription')
+
+function toggleDarkMode(){
+    document.querySelector('body').classList.toggle('dark-theme')
 }
-else {
-    console.log('tell user to log into account')
-}
-
-
-
-let cash = 50;
-let price = 40;
-let difference = cash - price;
-let isStoreOpen = false;
-if (cash >= price && isStoreOpen ===true){
-    console.log('print the receipt')
-}
-
-// if (cash>price){
-//     console.log(`you paid extra - here's $${difference} change.`)
-// }
-
-// else if (cash === price){
-//     console.log('You paid the exact amount, have a nice day!')
-// }
-
-// else{
-//     console.log(`not enough money - you still owe $${difference*-1}`)
-// }
-
-
